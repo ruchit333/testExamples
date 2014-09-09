@@ -1,0 +1,4 @@
+<?hh
+echo "hello";
+?>
+

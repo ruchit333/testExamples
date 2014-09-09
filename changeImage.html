@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>test</title>
+<script type="text/javascript" src="jquery-1.8.3.js"></script>
+<script type="text/javascript" language="javascript">
+function chageImage() {
+	var $k = jQuery.noConflict();
+	$k("#imagechange img").css("display","block");
+	$k("#Secimagechange img").css("display","none");
+	$k("#Thirdimagechange img").css("display","none");
+	
+}
+function changeSecImage() {
+	var $k = jQuery.noConflict();
+	$k("#Secimagechange img").css("display","block");
+	$k("#imagechange img").css("display","none");
+	$k("#Thirdimagechange img").css("display","none");
+}
+
+function changeThirdImage() {
+	var $k = jQuery.noConflict();
+	$k("#Thirdimagechange img").css("display","block");
+	$k("#imagechange img").css("display","none");
+	$k("#Secimagechange img").css("display","none");
+}
+
+</script>
+</head>
+<body>
+<div id="imagechange">
+	<img class="image" src="264395_files/a_data/1_small.jpg"/>
+</div>
+<div id="Secimagechange">
+	<img class="image" src="264395_files/a_data/2_small.jpg" style="display:none;"/>
+</div>
+<div id="Thirdimagechange">
+	<img class="image" src="264395_files/a_data/5_large.jpg" style="display:none;" height="246px;" width="440px;"/>
+</div>
+
+<div style="float:left; margin-top:10px; position:fixed;">
+    <img class="image" id="img1" src="264395_files/a_data/1_small.jpg" height="150px;" width="150px;" onClick="chageImage();"/>
+    <img class="image" id="img2" src="264395_files/a_data/2_small.jpg" height="150px;" width="150px;" onClick="changeSecImage();"/>
+    <img class="image" id="img2" src="264395_files/a_data/5_large.jpg" height="150px;" width="150px;" onClick="changeThirdImage();"/>
+</div>
+</body>
+</html>

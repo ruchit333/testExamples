@@ -1,0 +1,193 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.clearfix:after {
+  clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}
+@media only screen and (min-width: 649px) and (max-width: 1024px) {
+  #tsbadge_db8d3657bdbe440c985ae127463eaad4.standard,
+  #tsbadge_db8d3657bdbe440c985ae127463eaad4.reviews,
+  #tsbadge_db8d3657bdbe440c985ae127463eaad4.text {
+    height: 69px;
+    width: 69px;
+    background-image: url('../images/badge_small_compressed.png') !important;
+  }
+  #tsbadge_db8d3657bdbe440c985ae127463eaad4.standard #tslogo_db8d3657bdbe440c985ae127463eaad4 .rating_db8d3657bdbe440c985ae127463eaad4,
+  #tsbadge_db8d3657bdbe440c985ae127463eaad4.reviews #tslogo_db8d3657bdbe440c985ae127463eaad4 .rating_db8d3657bdbe440c985ae127463eaad4,
+  #tsbadge_db8d3657bdbe440c985ae127463eaad4.text #tslogo_db8d3657bdbe440c985ae127463eaad4 .rating_db8d3657bdbe440c985ae127463eaad4 {
+    display: none;
+  }
+}
+@media only screen and (min-width : 0px) and (max-width : 648px) {
+  #tsbadge_db8d3657bdbe440c985ae127463eaad4.standard,
+  #tsbadge_db8d3657bdbe440c985ae127463eaad4.reviews,
+  #tsbadge_db8d3657bdbe440c985ae127463eaad4.text {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 649px) and (max-width: 1024px) {
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node {
+    display: none !important;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+    display: none !important;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node {
+    display: none !important;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+    display: none !important;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle {
+    display: none !important;
+  }
+}
+@media only screen and (min-width : 0px) and (max-width : 648px) {
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node {
+    overflow: hidden;
+    width: 100%;
+    display: block !important;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    clear: both;
+    margin-top: 20px;
+    height: 225px;
+    border-top: none;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle {
+    width: 100%;
+    font-size: 19px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: arial;
+    background: #f7f7f5;
+    border-bottom: 2px solid #c6c6c4;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    color: #000;
+    text-align: left;
+    -webkit-box-shadow: inset 0px 5px 3px #F2F2F2;
+    -moz-box-shadow: inset 0px 5px 3px #F2F2F2;
+    box-shadow: inset 0px 5px 3px #F2F2F2;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader {
+    width: 206px;
+    height: 50px;
+    display: block;
+    background-image: url('../images/wortbildmarke-de_DE.png');
+    background-size: 206px 50px;
+    background-repeat: no-repeat;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .en_GB,
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .en_EU {
+    background-image: url('../images/wortbildmarke-en_GB.png');
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .de_AT,
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .de_CH {
+    background-image: url('../images/wortbildmarke-de_DE.png');
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .fr_FR,
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .fr_BE,
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .fr_CH {
+    background-image: url('../images/wortbildmarke-fr_FR.png');
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .es_ES {
+    background-image: url('../images/wortbildmarke-es_ES.png');
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .it_IT {
+    background-image: url('../images/wortbildmarke-it_IT.png');
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .pl_PL {
+    background-image: url('../images/wortbildmarke-pl_PL.png');
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .nl_NL,
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .nl_BE {
+    background-image: url('../images/wortbildmarke-nl_NL.png');
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+    float: left;
+    width: 70%;
+    color: #000;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsbox {
+    height: 40px;
+    margin: 0 0 3px;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsbox strong {
+    color: #363833;
+    font: bold 20px arial, sans-serif !important;
+    padding: 0 0 0 30px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 40px;
+    text-align: left;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsone {
+    background: url("../images/box_one.gif") no-repeat scroll 0 0 transparent;
+    background-size: 25px 41px;
+    background-position: left top;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tstwo {
+    background: url("../images/box_two.gif") no-repeat scroll 0 0 transparent;
+    background-size: 25px 41px;
+    background-position: left top;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsthree {
+    background: url("../images/box_three.gif") no-repeat scroll 0 0 transparent;
+    background-size: 25px 41px;
+    background-position: left top;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustBadgeResponsive {
+    margin-top: 15px;
+    display: block;
+    z-index: 9999999;
+    background-image: url('../images/badge_retina.png');
+    background-size: 120px 118px;
+    background-position: left top;
+    float: right;
+    width: 120px;
+    height: 118px;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 460px) {
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+    width: 50%;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsbox strong {
+    font-size: 15px !important;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle span {
+    padding-right: 80px;
+  }
+}
+@media only screen and (max-width: 418px) {
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+    width: 55%;
+  }
+  #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsbox strong {
+    font-size: 12px !important;
+  }
+}

@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'CalibriRegular';
+    src: url('fonts/calibri-webfont.eot');
+    src: url('fonts/calibri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/calibri-webfont.woff') format('woff'),
+         url('fonts/calibri-webfont.ttf') format('truetype'),
+         url('fonts/calibri-webfont.svg#CalibriRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#simwrapper{/*width:918px;*/ width:910px;margin:0 auto; position:relative;}
+.simblock{width:918px; float:left; position:relative; margin:0px; padding:0px; }
+.simbread{margin-top:25px;padding-bottom:18px; border-bottom: solid 3px #236bb1; float:left; position:relative;font-size:12px; color:#888888; font-family: 'CalibriRegular'; width:100%;}
+.simbanner{margin-top:45px; float:left; position: relative; width:918px;}
+.block1{width:48%; float:left; position:relative; margin-top:22px; padding:0px; margin-right:20px;}
+.stepblock{width:85px; height:40px; float:left; position:relative; background-color:#236bb1; color:#ffffff; font-weight: bold; font-size:23px;font-family: 'CalibriRegular'; line-height:40px; text-align:center;}
+.step2{width:350px; padding-left:5px; float:left; position:relative; margin:0px; line-height:40px; color:#ffffff;font-weight: bold; font-size:20px;font-family: 'CalibriRegular'; background-color:#ef4328; text-transform:uppercase; text-align:left;}
+.simintitle{background-image:url(../images/sim_title_radio.jpg); background-position: 0px 2px; background-repeat: no-repeat; width:918px; color:#236bb1; margin-top:12px; font-size: 18px;font-family: 'CalibriRegular'; font-weight: bold; text-transform:uppercase; float:left; padding-left:23px;}
+.simblue{color:#236bb1 !important;}
+.simorange{color:#ef4328 !important;}
+.rg2contentdiv{width:440px; float:left; position:relative; margin:0px; padding:0px;background-color:#f4f4f4}
+.block2{width:49%; float:left; position:relative; margin-top:22px; padding:0px;}
+.simformblock{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000; margin-top:18px; margin-left:20px; padding:0px; margin-bottom: 30px;}
+.simformblockiner{font-family:Arial, Helvetica, sans-serif !important; font-size:12px !important; color:#000 !important; margin:0px !important; padding:0px;}
+.simformblockiner a{text-decoration:underline;}
+.simphoto{margin-left:0px; width:325px; margin-top:10px;}
+.block1 ul{margin-top: 28px; float:left; position:relative; list-style-type: none; display:block; padding-bottom:23px; border-bottom: dashed 1px #236bb1; padding-left:0px; width:440px;}
+.block1 ul li{padding-right:0px; float:left; list-style-type: none; display:block;position:relative; text-align:center;}
+.simblockimg{width:108px; float:left; position:relative;margin:0px; padding-bottom:10px;}
+.simcardstype{/*width:108px !important;*/width:90px !important;}
+.simprefer{font-weight:bold; font-size:15px; /*margin-left: 8px;*/ margin-left:8px; color:#49494b;font-family: 'CalibriRegular'; /*width:105px;*/width:90px;}
+.prefersim{float:left; position:relative;}
+.simlink{color:#F00; text-decoration:underline; font-size:11px;font-family: 'CalibriRegular'; margin-left:21px;}
+.simnetwork{width:90px !important;}
+/*.simnetworkselect{width:90px; float:left; text-align:center; margin-top:15px;}*/
+.simnetworkselect{margin: 15px auto 0 auto!important;text-align:center;}
+.simviewtarrif{width:90px;color:#236bb1; font-size:12px;font-family: 'CalibriRegular';text-align:center; float:left;text-decoration:underline}
+.simviewtarrif a{width:90px;color:#236bb1; font-size:12px;font-family: 'CalibriRegular';text-align:center; float:left;text-decoration:underline}
+.simviewtarrif:hover{width:90px;color:#236bb1; font-size:12px;font-family: 'CalibriRegular';text-align:center; float:left;text-decoration:underline}
+.simclose{cursor:pointer;}
+.mm{padding: 0px !important;vertical-align:top !important;background:none !important}
+

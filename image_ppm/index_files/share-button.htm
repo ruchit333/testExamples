@@ -1,0 +1,178 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Share deal with HUKD</title><!-- base href="http://www.hotukdeals.com/social/share-button?title=i-Got+U+jump+Footpod+POD-30+Bluetooth+4.0+For+Smartphones&url=www.prepaymania.co.uk%2Fmobilephone%2Fi-got-u-jump-footpod-pod-30-bluetooth-4-0-for-smarphones.html&image=http%3A%2F%2Fwww.prepaymania.co.uk%2Fuploads%2Fproduct%2Fsmall%2Fi-got-u-jump-footpod-pod-30-bluetooth-4-0-for-smarphones-m-16496-1395746711.jpg&price=29.99" --><style>
+					body{
+						margin:0;
+						padding:0;
+					}
+					a.share-button{
+						height:20px;
+						text-decoration:none;
+						font-size:12px;
+						font-family:arial, helvetica, sans-serif;
+						padding:0;
+						display:block;
+						position:relative;
+						outline:none;
+					}
+						a.share-button .icon{
+							height:20px;
+							width:28px;
+							background-image:url(/images/social/hukd-button-bg-sprite.gif);
+							background-repeat:no-repeat;
+							background-position:left top;
+							position:absolute;
+							top:0;
+							left:0;
+							display:block;
+						}
+							a.share-button:hover .icon{ background-position:left bottom; }
+					
+						a.share-button .content{
+							height:20px;
+							margin-left:27px;
+							background-image:url(/images/social/hukd-button-bg-sprite.gif);
+							background-repeat:no-repeat;
+							background-position:right top;
+							display:block;
+							line-height:160%;
+						}
+							a.share-button:hover .content{ background-position:right bottom; }
+					
+					.button-label, .thermometer-temperature{ color:#f0f3ac; }
+					.thermometer-temperature{
+						margin-left:5px;
+						font-weight:bold;
+					}
+				</style></head><body><a class="share-button popup" onclick="share_button_popup(event, this.href); return false;" href="http://www.hotukdeals.com/submit/social?type=deals&amp;sdeal_product_title=i-Got+U+jump+Footpod+POD-30+Bluetooth+4.0+For+Smartphones&amp;sdeal_url=www.prepaymania.co.uk%2Fmobilephone%2Fi-got-u-jump-footpod-pod-30-bluetooth-4-0-for-smarphones.html&amp;simg_url=http%3A%2F%2Fwww.prepaymania.co.uk%2Fuploads%2Fproduct%2Fsmall%2Fi-got-u-jump-footpod-pod-30-bluetooth-4-0-for-smarphones-m-16496-1395746711.jpg&amp;sprice=29.99"><span class="icon"></span><span class="content"><span class="button-label">HUKD</span><span class="thermometer-temperature"></span></span></a><script>
+					var thread_url = "http://www.hotukdeals.com/deals/";
+					var http_request = false;
+
+					document.domain = "hotukdeals.com"; //needed to communicate between different subdomains
+                    //document.domain = "hotukdeals.local"; //needed to communicate between different subdomains
+					
+					//
+					function share_button_popup(event, href) {
+
+						disable_event(event);
+
+						var w = 512 + 30;
+						var h = 510;
+						var l = (screen.width - w) / 2;
+						var t = (screen.height - h) / 2; 
+						var hukd_share_button_dialog = window.open(href, "hukd_share_button_dialog", 
+							"scrollbars=yes,status=no,toolbar=no,left=" + l + ",top=" + t + ",width=" + w + ",height=" + h);
+					}
+					
+					function disable_event(event) {
+						if (!event) var event = window.event;
+						event.cancelBubble = true;
+						if (event.stopPropagation) event.stopPropagation();
+					}
+
+					function make_request(url, form_fields, id, type) {
+					
+						try{
+							if(http_request != false && http_request.readyState != 4){
+								try{
+									http_request.abort();
+								}catch(error){
+									http_request.onreadystatechange = function() { };
+								}
+							}
+						}catch(e){
+						
+						}
+						
+					    http_request = false;
+					
+					    if (window.XMLHttpRequest) { // Mozilla, Safari, ...
+					        http_request = new XMLHttpRequest();
+					    } else if (window.ActiveXObject) { // IE
+					        try {
+					            http_request = new ActiveXObject("Msxml2.XMLHTTP");
+					        } catch (e) {
+					            try {
+					                http_request = new ActiveXObject("Microsoft.XMLHTTP");
+					            } catch (e) {}
+					        }
+					    }
+					
+					    if (!http_request) {
+					        return false;
+					    }
+					    
+					    httpRequest.onreadystatechange = function() { updatePage(httpRequest, id, type); };
+					    
+					    if(form_fields == null){
+					    	http_request.open('GET', url, true);
+					    	http_request.send(null);
+					    }else{
+					    	http_request.open('POST', url, true);
+					    	http_request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					    	http_request.setRequestHeader("Content-length", form_fields.length);
+					    	http_request.setRequestHeader("Connection", "close");
+					    	http_request.send(form_fields);
+					    }
+					}
+
+					function update_page(http_request, id, type) {
+						try{
+							if (http_request.readyState == 4) {
+						        if (http_request.status == 200) {
+									response = parse_response(http_request.response);
+									if (type == 'cold' || type == 'hot' || type == 'lukewarm') {
+										var textSpan = document.getElementById("thread-button-label");
+										if (textSpan.textContent) {
+											textSpan.textContent = "HUKD";
+										} else {
+											textSpan.innerText = "HUKD";
+										}
+										var tempSpan = document.getElementById("temp-span");
+										node = tempSpan.parentNode;
+										while (node.hasChildNodes()) {
+											node.removeChild(node.firstChild);
+										}
+										node.appendChild(textSpan);
+										node.innerHTML += response.content;
+								 	}
+								}
+						    }
+						}catch(error){
+							//caught error from canceling ajax request
+						}
+					}
+
+					function vote(event, id, type) {
+						disable_event(event);
+						var url = '/vote?t=' + id + '&v=' + type + '&s=social-button';
+						make_request(url, null, id, type);
+					}
+					
+					function parse_response(response){
+						var responseObj = {};
+						responseObj.status = get_tag_from_response("response_status",response);
+						responseObj.content = get_tag_from_response("response_content",response);
+						responseObj.messages = get_tag_from_response("response_messages",response);
+						responseObj.value = get_tag_from_response("response_value",response);
+						return responseObj;
+					}
+					
+					function get_tag_from_response(tag, response){
+						var tagVal = null;
+						response = response.split("<" + tag + ">");
+						
+						if(response.length > 1){
+							response = response[1].split("</" + tag + ">");
+							if(response.length > 1){
+								tagVal = trim(response[0]);
+							}
+						}
+						return tagVal;
+					}
+					
+					function trim(string){
+						return string.replace(/^\s+|\s+$/g,"");
+					}
+
+					//
+				</script>
+</body></html>
